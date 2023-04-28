@@ -5,13 +5,12 @@ function solution(people, limit) {
 
   while(people.length !== 0) {
     if(people[0]+people[people.length-1] <= limit) {
-      result++
       people.pop()
       people.shift()
     } else {
-      result++
       people.pop()
     }
+      result++
   }
     return result
 }
