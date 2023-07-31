@@ -1,9 +1,16 @@
 function solution(s) {
    
-    let sort = s.split(' ').map(e => Number(e)).sort((a,b) => a-b)
+    let result =[]
 
 
-    let result = [sort[0],sort[sort.length-1]]
-   
+    let arr= s.split(' ').map((e) => Number(e))
+
+    let max = Math.max(...arr)
+    let min = Math.min(...arr)
+
+    result.push(min)
+    result.push(max)
+    
     return result.join(' ')
+
 }
