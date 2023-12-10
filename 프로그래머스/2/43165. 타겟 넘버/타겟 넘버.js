@@ -1,5 +1,6 @@
 function solution(numbers, target) {
     let result =0;
+    let count =0;
 const length = numbers.length
 
 function dfs (count , sum) {
